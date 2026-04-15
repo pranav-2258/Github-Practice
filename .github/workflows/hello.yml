@@ -9,3 +9,6 @@ jobs:
     steps:
       - name: Print message
         run: echo "Hello, GitHub Actions!"
+      - name: Print message
+        run: echo "jobs- What to run,jobs- how to run. every job has independent vm,meaning every job has its own enviornment !"
+      
