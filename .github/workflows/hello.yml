@@ -1,0 +1,20 @@
+name: My First workflow
+
+on: push
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "Hello, GitHub Actions!"
+      - name: Print info
+        run: echo "jobs- What to run,jobs- how to run. every job has independent vm,meaning every job has its own enviornment !"
+      
+  say-bye:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "Second message!"
