@@ -14,6 +14,22 @@ jobs:
         run: echo " Hii from Ridham Garg"
 
 
+  say-checkout:
+    needs: say-hello
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup node"
+        uses: actions/setup-node@v1'
+        with:
+          node-version: '14'
+
+      - name: Check Node version
+        run: node -v
+
   say-bye:
     needs: say-hello
     runs-on: ubuntu-latest
