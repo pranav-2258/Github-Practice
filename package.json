@@ -3,5 +3,8 @@
     "body": "^5.1.0",
     "express": "^5.2.1",
     "parsel": "^0.3.0"
+  },
+  "scripts": {
+    "test": "echo: running tests"
   }
 }
